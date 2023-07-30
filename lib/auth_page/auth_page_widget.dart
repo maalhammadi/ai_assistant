@@ -116,9 +116,13 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                       controller: _model.emailAddressController,
                                       obscureText: false,
                                       decoration: InputDecoration(
-                                        labelText: 'Email Address',
+                                        labelText: 'Email',
                                         labelStyle: FlutterFlowTheme.of(context)
-                                            .bodySmall,
+                                            .bodySmall
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 14.0,
+                                            ),
                                         hintText: 'Enter your email...',
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .bodySmall,
@@ -181,9 +185,10 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                       decoration: InputDecoration(
                                         labelText: 'Password',
                                         labelStyle: FlutterFlowTheme.of(context)
-                                            .bodySmall
+                                            .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
+                                              color: Color(0xFF0F1113),
                                               lineHeight: 1.0,
                                             ),
                                         hintText: 'Enter your password...',
