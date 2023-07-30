@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "472328531781",
+    "project_id": "xyzaiassistant",
+    "storage_bucket": "xyzaiassistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472328531781:android:264ff92da80e6e76d4182c",
+        "android_client_info": {
+          "package_name": "com.mycompany.aiwriter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472328531781-15d0t6l7orp910rfsjb36d6ifd3o69hm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxReBhnXFzfnVbc4c_A3nSedOElHrfIPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472328531781-15d0t6l7orp910rfsjb36d6ifd3o69hm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "472328531781-thig3904746tt921t3c1n4vhogrdhtcq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.aiwriter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
