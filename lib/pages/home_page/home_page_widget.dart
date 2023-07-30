@@ -72,7 +72,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             autovalidateMode: AutovalidateMode.disabled,
             child: SingleChildScrollView(
               child: Column(
-                mainAxisSize: MainAxisSize.max,
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Flexible(
                     child: Padding(
