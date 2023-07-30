@@ -259,7 +259,7 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                           return;
                                         }
 
-                                        context.goNamedAuth(
+                                        context.pushNamedAuth(
                                             'HomePage', context.mounted);
                                       },
                                       text: 'Sign In',
