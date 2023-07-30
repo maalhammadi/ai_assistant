@@ -52,6 +52,21 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'The writing assistant app',
+                    style: FlutterFlowTheme.of(context).titleMedium.override(
+                          fontFamily: 'Readex Pro',
+                          color: FlutterFlowTheme.of(context).primaryText,
+                          fontSize: 25.0,
+                          fontWeight: FontWeight.w800,
+                        ),
+                  ),
+                ],
+              ),
               Expanded(
                 child: DefaultTabController(
                   length: 2,
