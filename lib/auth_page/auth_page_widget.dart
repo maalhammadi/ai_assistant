@@ -46,7 +46,7 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
       onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primary,
+        backgroundColor: FlutterFlowTheme.of(context).secondary,
         body: Padding(
           padding: EdgeInsetsDirectional.fromSTEB(0.0, 70.0, 0.0, 0.0),
           child: Column(
@@ -68,6 +68,8 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                               FlutterFlowTheme.of(context).titleMedium,
                           labelColor:
                               FlutterFlowTheme.of(context).primaryBtnText,
+                          unselectedLabelColor:
+                              FlutterFlowTheme.of(context).secondaryText,
                           borderWidth: 0.0,
                           borderRadius: 0.0,
                           elevation: 0.0,
@@ -271,14 +273,15 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                         iconPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Colors.white,
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
                                               fontFamily: 'Readex Pro',
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primary,
+                                                      .primaryBackground,
                                             ),
                                         elevation: 3.0,
                                         borderSide: BorderSide(
@@ -306,7 +309,7 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                             EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
-                                            .primary,
+                                            .secondaryText,
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
