@@ -77,14 +77,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HomePageWidget() : AuthPageWidget(),
+      errorBuilder: (context, state) => appStateNotifier.loggedIn
+          ? HomePageWidget()
+          : Robin3PhoneAuthWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) =>
-              appStateNotifier.loggedIn ? HomePageWidget() : AuthPageWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? HomePageWidget()
+              : Robin3PhoneAuthWidget(),
         ),
         FFRoute(
           name: 'HomePage',
@@ -95,6 +97,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'AuthPage',
           path: '/authPage',
           builder: (context, params) => AuthPageWidget(),
+        ),
+        FFRoute(
+          name: 'AuthPageCopy',
+          path: '/authPageCopy',
+          builder: (context, params) => AuthPageCopyWidget(),
+        ),
+        FFRoute(
+          name: 'Robin3PhoneAuth',
+          path: '/robin3PhoneAuth',
+          builder: (context, params) => Robin3PhoneAuthWidget(),
+        ),
+        FFRoute(
+          name: 'PinCode',
+          path: '/pinCode',
+          builder: (context, params) => PinCodeWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -261,7 +278,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/authPage';
+            return '/robin3PhoneAuth';
           }
           return null;
         },

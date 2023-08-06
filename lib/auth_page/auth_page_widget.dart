@@ -42,6 +42,8 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
 
   @override
   Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
     return GestureDetector(
       onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
       child: Scaffold(
@@ -59,7 +61,7 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                   Text(
                     'The writing assistant app',
                     style: FlutterFlowTheme.of(context).titleMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'IBM Plex Sans Arabic',
                           color: FlutterFlowTheme.of(context).primaryText,
                           fontSize: 25.0,
                           fontWeight: FontWeight.w800,
@@ -120,7 +122,8 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                         labelStyle: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily:
+                                                  'IBM Plex Sans Arabic',
                                               fontSize: 14.0,
                                             ),
                                         hintText: 'Enter your email...',
@@ -167,7 +170,7 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'IBM Plex Sans Arabic',
                                             color: Color(0xFF0F1113),
                                           ),
                                       maxLines: null,
@@ -187,7 +190,8 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                         labelStyle: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily:
+                                                  'IBM Plex Sans Arabic',
                                               color: Color(0xFF0F1113),
                                               lineHeight: 1.0,
                                             ),
@@ -195,7 +199,8 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily:
+                                                  'IBM Plex Sans Arabic',
                                               lineHeight: 1.0,
                                             ),
                                         enabledBorder: OutlineInputBorder(
@@ -255,7 +260,7 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'IBM Plex Sans Arabic',
                                             color: Color(0xFF0F1113),
                                             lineHeight: 1.0,
                                           ),
@@ -298,7 +303,8 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily:
+                                                  'IBM Plex Sans Arabic',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryBackground,
@@ -333,7 +339,8 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily:
+                                                  'IBM Plex Sans Arabic',
                                               color: Colors.white,
                                             ),
                                         elevation: 0.0,
@@ -408,7 +415,7 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'IBM Plex Sans Arabic',
                                             color: Color(0xFF0F1113),
                                           ),
                                       maxLines: null,
@@ -491,7 +498,7 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'IBM Plex Sans Arabic',
                                             color: Color(0xFF0F1113),
                                           ),
                                       validator: _model
@@ -529,14 +536,16 @@ class _AuthPageWidgetState extends State<AuthPageWidget> {
                                         iconPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Colors.white,
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily:
+                                                  'IBM Plex Sans Arabic',
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primary,
+                                                      .secondaryBackground,
                                             ),
                                         elevation: 3.0,
                                         borderSide: BorderSide(

@@ -106,9 +106,9 @@ class LightModeTheme extends FlutterFlowTheme {
   @Deprecated('Use tertiary instead')
   Color get tertiaryColor => tertiary;
 
-  late Color primary = const Color(0xFF4B39EF);
-  late Color secondary = const Color(0xFF39D2C0);
-  late Color tertiary = const Color(0xFFEE8B60);
+  late Color primary = const Color(0xFF0097B2);
+  late Color secondary = const Color(0xFFFFBD59);
+  late Color tertiary = const Color(0xFF737373);
   late Color alternate = const Color(0xFFE0E3E7);
   late Color primaryText = const Color(0xFF14181B);
   late Color secondaryText = const Color(0xFF57636C);
@@ -165,107 +165,107 @@ class ThemeTypography extends Typography {
 
   final FlutterFlowTheme theme;
 
-  String get displayLargeFamily => 'Outfit';
+  String get displayLargeFamily => 'IBM Plex Sans Arabic';
   TextStyle get displayLarge => GoogleFonts.getFont(
-        'Outfit',
+        'IBM Plex Sans Arabic',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 64.0,
       );
-  String get displayMediumFamily => 'Outfit';
+  String get displayMediumFamily => 'IBM Plex Sans Arabic';
   TextStyle get displayMedium => GoogleFonts.getFont(
-        'Outfit',
+        'IBM Plex Sans Arabic',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 44.0,
       );
-  String get displaySmallFamily => 'Outfit';
+  String get displaySmallFamily => 'IBM Plex Sans Arabic';
   TextStyle get displaySmall => GoogleFonts.getFont(
-        'Outfit',
+        'IBM Plex Sans Arabic',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 36.0,
       );
-  String get headlineLargeFamily => 'Outfit';
+  String get headlineLargeFamily => 'IBM Plex Sans Arabic';
   TextStyle get headlineLarge => GoogleFonts.getFont(
-        'Outfit',
+        'IBM Plex Sans Arabic',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 32.0,
       );
-  String get headlineMediumFamily => 'Outfit';
+  String get headlineMediumFamily => 'IBM Plex Sans Arabic';
   TextStyle get headlineMedium => GoogleFonts.getFont(
-        'Outfit',
+        'IBM Plex Sans Arabic',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 24.0,
       );
-  String get headlineSmallFamily => 'Outfit';
+  String get headlineSmallFamily => 'IBM Plex Sans Arabic';
   TextStyle get headlineSmall => GoogleFonts.getFont(
-        'Outfit',
+        'IBM Plex Sans Arabic',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
         fontSize: 24.0,
       );
-  String get titleLargeFamily => 'Outfit';
+  String get titleLargeFamily => 'IBM Plex Sans Arabic';
   TextStyle get titleLarge => GoogleFonts.getFont(
-        'Outfit',
+        'IBM Plex Sans Arabic',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
         fontSize: 22.0,
       );
-  String get titleMediumFamily => 'Readex Pro';
+  String get titleMediumFamily => 'IBM Plex Sans Arabic';
   TextStyle get titleMedium => GoogleFonts.getFont(
-        'Readex Pro',
+        'IBM Plex Sans Arabic',
         color: theme.info,
         fontWeight: FontWeight.normal,
         fontSize: 18.0,
       );
-  String get titleSmallFamily => 'Readex Pro';
+  String get titleSmallFamily => 'IBM Plex Sans Arabic';
   TextStyle get titleSmall => GoogleFonts.getFont(
-        'Readex Pro',
+        'IBM Plex Sans Arabic',
         color: theme.info,
         fontWeight: FontWeight.w500,
         fontSize: 16.0,
       );
-  String get labelLargeFamily => 'Readex Pro';
+  String get labelLargeFamily => 'IBM Plex Sans Arabic';
   TextStyle get labelLarge => GoogleFonts.getFont(
-        'Readex Pro',
+        'IBM Plex Sans Arabic',
         color: theme.secondaryText,
         fontWeight: FontWeight.normal,
         fontSize: 16.0,
       );
-  String get labelMediumFamily => 'Readex Pro';
+  String get labelMediumFamily => 'IBM Plex Sans Arabic';
   TextStyle get labelMedium => GoogleFonts.getFont(
-        'Readex Pro',
+        'IBM Plex Sans Arabic',
         color: theme.secondaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
       );
-  String get labelSmallFamily => 'Readex Pro';
+  String get labelSmallFamily => 'IBM Plex Sans Arabic';
   TextStyle get labelSmall => GoogleFonts.getFont(
-        'Readex Pro',
+        'IBM Plex Sans Arabic',
         color: theme.secondaryText,
         fontWeight: FontWeight.normal,
         fontSize: 12.0,
       );
-  String get bodyLargeFamily => 'Readex Pro';
+  String get bodyLargeFamily => 'IBM Plex Sans Arabic';
   TextStyle get bodyLarge => GoogleFonts.getFont(
-        'Readex Pro',
+        'IBM Plex Sans Arabic',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 16.0,
       );
-  String get bodyMediumFamily => 'Readex Pro';
+  String get bodyMediumFamily => 'IBM Plex Sans Arabic';
   TextStyle get bodyMedium => GoogleFonts.getFont(
-        'Readex Pro',
+        'IBM Plex Sans Arabic',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
       );
-  String get bodySmallFamily => 'Readex Pro';
+  String get bodySmallFamily => 'IBM Plex Sans Arabic';
   TextStyle get bodySmall => GoogleFonts.getFont(
-        'Readex Pro',
+        'IBM Plex Sans Arabic',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 12.0,

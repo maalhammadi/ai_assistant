@@ -46,6 +46,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
 
   @override
   Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
     return GestureDetector(
       onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
       child: Scaffold(
@@ -57,7 +59,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           title: Text(
             'AI Writing Assistant',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Outfit',
+                  fontFamily: 'IBM Plex Sans Arabic',
                   color: Colors.white,
                   fontSize: 22.0,
                 ),
@@ -378,7 +380,6 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 ),
                                 Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  height: 300.0,
                                   decoration: BoxDecoration(),
                                   child: TextFormField(
                                     controller: _model.questionController,
@@ -472,7 +473,6 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 ),
                                 Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  height: 300.0,
                                   decoration: BoxDecoration(),
                                   child: TextFormField(
                                     controller: _model.directionController,
@@ -582,7 +582,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   textStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Readex Pro',
+                                        fontFamily: 'IBM Plex Sans Arabic',
                                         color: FlutterFlowTheme.of(context)
                                             .primaryText,
                                       ),
@@ -598,7 +598,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   textStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Readex Pro',
+                                        fontFamily: 'IBM Plex Sans Arabic',
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryText,
                                       ),
@@ -665,7 +665,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: 'Readex Pro',
+                                  fontFamily: 'IBM Plex Sans Arabic',
                                   color: Colors.white,
                                 ),
                             elevation: 3.0,
@@ -690,7 +690,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           'Result',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'IBM Plex Sans Arabic',
                                     fontWeight: FontWeight.bold,
                                   ),
                         ),
@@ -736,7 +736,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               context.pushNamedAuth(
                                   'AuthPage', context.mounted);
                             },
-                            text: 'Generate',
+                            text: 'Log Out',
                             options: FFButtonOptions(
                               height: 40.0,
                               padding: EdgeInsetsDirectional.fromSTEB(
@@ -747,7 +747,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'IBM Plex Sans Arabic',
                                     color: Colors.white,
                                   ),
                               elevation: 3.0,
